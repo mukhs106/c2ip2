@@ -1,0 +1,22 @@
+/* STYLE FOR THE INPUT FIELD */
+#charInput {
+font-family: Helvetica, sans-serif;
+border-radius: 3rem;
+width: 30rem;
+font-size: 2rem;
+}
+
+
+/* STYLE FOR THE SUBMIT BUTTON */
+#submitButton {
+    font-family: Helvetica, sans-serif;
+    background-color: #ffd900;
+    border-radius: 3rem;
+    width: 15rem;
+    font-size: 2rem;
+}
+
+/* STYLE FOR THE IMAGE */
+#displayedImage {
+    display: none; /* This line is mandatory */
+}
