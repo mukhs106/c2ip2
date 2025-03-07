@@ -1,52 +1,40 @@
-/*Image Display Script Below */
-// Array of images
-        // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
-        const images = [
-            "images/a.jpg", //A
-            "images/b.jpg", //B
-            "images/c.jpg", //C
-            "images/d.jpg", //D
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=E", //E
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=F", //F
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=G", //G
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=H", //H
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=I", //I
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=J", //J
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=K", //K
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=L", //L
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=M", //M
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=N", //N
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=O", //O
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=P", //P
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Q", //Q
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=R", //R
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=S", //S
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=T", //T
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=U", //U
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=V", //V
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=W", //W
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=X", //X
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Y", //Y
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Z"  //Z
-        ];
-
         function displayImage() {
-            const input = document.getElementById("charInput").value.toUpperCase();
             const imgElement = document.getElementById("displayedImage");
-            
-            // Assign an image based on character (A-Z)
-            const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
-            if (index >= 0 && index < images.length) {
-                imgElement.src = images[index];
-                imgElement.style.display = "block";
-            } else {
-                /* 
-                alert("Please enter a letter between A and Z.");
-                imgElement.style.display = "none";
-                */
 
-                // IF INVALID INPUT IS ENTERED, DISPLAY ALTERNATE IMAGE
-                imgElement.src = "images/test.jpg";
+            //Letter
+            const input1_letter = document.getElementById("charInput1").value.toUpperCase();
+            const input2_letter = document.getElementById("charInput2").value.toUpperCase();
+            
+            //Number
+            const input1_number = input1_letter.charCodeAt(0); //Converts the letter to a number (https://www.ascii-code.com); For instance, 'A' is 65 in ASCII
+            const input2_number = input2_letter.charCodeAt(0); //Converts the letter to a number (https://www.ascii-code.com); For instance, 'A' is 65 in ASCII
+
+            //HINTS
+            //HINT 1: You can compare strings with comparison operators and boolean operators
+            //COMPARISON & LOGICAL OPERATORS: https://www.w3schools.com/js/js_comparisons.asp
+            if(input1_letter === "A" && input2_letter !== "B") { //If input1_letter equals A AND input2_letter does not equal B, then show this image
+                imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
                 imgElement.style.display = "block";
             }
+
+
+            //HINT 2: Assign an image based numerical values
+            if(input1_number == 67 && input2_number == 68) { //If input1_number is 67 (C) AND input2_number is 68 (D), then show this image
+                imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
+                imgElement.style.display = "block";
+            } 
+
+
+            //HINT 3: You can perform simple math operations on the variables
+            //Arithmetic: https://www.w3schools.com/js/js_arithmetic.asp
+            let mymathresult = input1_number - input2_number;
+            console.log(mymathresult); //Console is a way to show a value in the console inspector
+
+            if(mymathresult < 1) { //If mymathresult is less than 1, then show this image
+                imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWx2NnlvN3RocHVya2d3cXB5b2V0bXRqNXhyMGZkZG4wd3Zpdm13NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o75ajIFH0QnQC3nCeD/giphy.gif"
+                imgElement.style.display = "block";
+            }
+
+            //Remember to use if else statements to capture error conditions
+
         }

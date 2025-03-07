@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1 INPUT 1 OUTPUT TEMPLATE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <title>Reminders Atelier</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-
-    
+<div id="title">Reminders Atelier</div>
     <!-- INPUT FIELD FOR 1 CHARACTER -->
-    <input type="text" id="charInput" maxlength="1">
+    <input type="text" id="charInput1" maxlength="1">
+    <input type="text" id="charInput2" maxlength="1">
 
     <!-- BUTTON TO DISPLAY IMAGE -->
-    <button onclick="displayImage()" id="submitButton">Reveal Image</button>
+    <button onclick="displayImage()" id="submitButton">Show Letter</button>
 
     <!-- IMAGE TO DISPLAY -->
     <img id="displayedImage" src="" alt="Displayed Image">
 
+    <!-- Hoverable Question Mark -->
+    <div class="tooltip-container">
+        <div class="question-mark">?</div>
+        <div class="tooltip-box">
+            This project explores the beauty of Urdu/Hindi Ghazals by providing accurate English translations in a typographic experience.
+        </div>
+    </div>
 
-<script src="script.js"></script>
+    <div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
 </body>
 </html>
