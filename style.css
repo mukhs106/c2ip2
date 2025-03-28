@@ -12,7 +12,7 @@
 
   #title {
     position: absolute;
-    top: 2rem;
+    top: 15rem;
     left: 0;
     right: 0;
     color: #251402;
@@ -21,12 +21,12 @@
     font-size: 3rem;
   }
 
-#charInput1 {
+/*#charInput1 {
 font-family: Helvetica, sans-serif;
 border-radius: 3rem;
 width: 10rem;
 font-size: 2rem;
-margin-left: 10rem;
+margin-left: 33rem;
 }
 
 #charInput2 {
@@ -34,6 +34,36 @@ margin-left: 10rem;
     border-radius: 3rem;
     width: 10rem;
     font-size: 2rem;
+} */
+
+/* STYLE FOR THE DROPDOWN MENUS */
+#category1 {
+    font-family: "instrument ser§if" , sans-serif;
+    border-radius: 3rem;
+    width: 12rem;
+    font-size: 2rem;
+    margin-left: 33rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #ccc;
+    appearance: none; /* Hides default dropdown styling */
+    cursor: pointer;
+}
+
+
+/* STYLE FOR THE SUBMIT BUTTON */
+#submitButton {
+    font-family: "Instrument Serif", sans-serif;
+    background-color: #fffae1;
+    border-radius: 3rem;
+    width: 15rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 #submitButton {
@@ -48,6 +78,8 @@ font-family: "instrument serif" , sans-serif;
 /* STYLE FOR THE IMAGE */
 #displayedImage {
     display: none; 
+    margin-top: 2rem;
+    margin-left: 35rem;
 }
 
 html {

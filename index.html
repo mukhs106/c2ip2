@@ -12,12 +12,22 @@
 </head>
 <body>
 <div id="title">Reminders Atelier</div>
-    <!-- INPUT FIELD FOR 1 CHARACTER -->
+
+<!-- DROPDOWN MENUS INSTEAD OF TEXT INPUTS -->
+<label for="category1">How are you feeeling today?</label>
+<select id="category1">
+    <option value="A">Happy</option>
+    <option value="B">Sad</option>
+    <option value="C">Frustrated</option>
+    <option value="D">Angry</option>
+</select>
+
+    <!-- INPUT FIELD FOR 1 CHARACTER 
     <input type="text" id="charInput1" maxlength="1">
     <input type="text" id="charInput2" maxlength="1">
 
-    <!-- BUTTON TO DISPLAY IMAGE -->
-    <button onclick="displayImage()" id="submitButton">Show Letter</button>
+     BUTTON TO DISPLAY IMAGE 
+    <button onclick="displayImage()" id="submitButton">Show Letter</button> -->
 
     <!-- IMAGE TO DISPLAY -->
     <img id="displayedImage" src="" alt="Displayed Image">
